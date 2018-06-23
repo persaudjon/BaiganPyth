@@ -22,7 +22,7 @@ class KeypadFactory():
             ]
 
         if row_pins is None:
-            row_pins = [4,14,15,17]
+            row_pins = [7,11,13,15]
 
         if col_pins is None:
             col_pins = [18,27,22]
@@ -38,22 +38,34 @@ class KeypadFactory():
             ["*",0,"#"]
         ]
 
-        ROW_PINS = [4,14,15,17]
-        COL_PINS = [18,27,22]
+            #ROW_PINS = [7,8,10,11]
+        #COL_PINS = [12,13,9]
+        #ROW_PINS = [4, 14, 15, 17] # BCM numbering
+        #COL_PINS = [18, 27, 22] # BCM numbering
+        
+        #ROW_PINS = [7, 8, 10, 11]
+        #COL_PINS = [12,13,15]
+        ROW_PINS = [4, 14, 15, 17] # GPIO numbering
+        COL_PINS = [18, 27, 22] # GPIO numbering
+        #R = [2,7,6,4]
+        #C = [3,1,5]
+        #R = [green,purple,yellow,black]
+        #C = [grey,white,blue]
 
         return self.create_keypad(KEYPAD, ROW_PINS, COL_PINS)
 
     def create_4_by_4_keypad(self):
 
         KEYPAD = [
-            [1,2,3,"A"],
-            [4,5,6,"B"],
-            [7,8,9,"C"],
-            ["*",0,"#","D"]
+            [1,2,3],
+            [4,5,6],
+            [7,8,9],
+            ["*",0,"#"]
         ]
 
-        ROW_PINS = [4,14,15,17]
-        COL_PINS = [18,27,22,23]
+       
+        ROW = [4, 17, 27, 22] # BCM numbering
+        COL = [18, 23, 24] # BCM numbering
 
         return self.create_keypad(KEYPAD, ROW_PINS, COL_PINS)
 
