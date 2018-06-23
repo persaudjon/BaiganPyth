@@ -38,11 +38,7 @@ class KeypadFactory():
             ["*",0,"#"]
         ]
 
-            #ROW_PINS = [7,8,10,11]
-        #COL_PINS = [12,13,9]
-        #ROW_PINS = [4, 14, 15, 17] # BCM numbering
-        #COL_PINS = [18, 27, 22] # BCM numbering
-        
+                
         #ROW_PINS = [7, 8, 10, 11]
         #COL_PINS = [12,13,15]
         ROW_PINS = [4, 14, 15, 17] # GPIO numbering
