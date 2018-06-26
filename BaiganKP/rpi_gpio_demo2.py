@@ -1,8 +1,10 @@
 #!/usr/bin/python
 
+from libAPI import connectAPI
 from pad4pi import rpi_gpio
 import time
 import sys
+
 
 entered_passcode = ""
 correct_passcode = "1234"
