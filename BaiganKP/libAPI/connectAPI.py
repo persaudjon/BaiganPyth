@@ -10,12 +10,18 @@ isPressed = "Button Not Pressed"
 
 def pushToAPI():
     localTime = time.asctime( time.localtime(time.time()))
-    r = requests.post('http://18.207.187.189:8080/v1/events', data = {'event': 'Button Accepted','timestamp': str(localTime)})
+    url = "http://18.207.187.189:8080/v1/events"
+    data = {"event":"Button Accepted","timestamp":str(localTime)}
+    headers = {'Content-type': 'application/json'}
+    rsp = requests.post(url, json=data, headers=headers)
+
     return;
 
 def pullFromAPI():
     #FIll in  get parameter with correct API key
     r = requests.get()
+    #converts raw Data to JSON
+    print(r.json())
     return r;
 
 
