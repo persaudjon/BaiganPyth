@@ -1,16 +1,13 @@
-import RPi.GPIO as GPIO
-import time
+
+import datetime
 import requests
 
 
-GPIO.setmode(GPIO.BCM)
-GPIO.setup(18, GPIO.IN, pull_up_down=GPIO.PUD_UP)
-isPressed = "Button Not Pressed"
-
+class apiConnect:
 
 def pushToAPI():
-    localTime = time.asctime( time.localtime(time.time()))
-    r = requests.post('http://18.207.187.189:8080/v1/events', data = {'event': 'Button Accepted','timestamp': str(localTime)})
+    timeNow = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    r = requests.post('http://18.207.187.189:8080/v1/events', data = {'event': 'Button Accepted','timestamp': str(timeNow)})
     return;
 
 def pullFromAPI():

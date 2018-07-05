@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="518cb03a-6eda-4c30-a492-06e86da9b233" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/BaiganKP/libAPI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BaiganKP/libAPI/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BaiganKP/libAPI/connectAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/BaiganKP/libAPI/connectAPI.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +16,8 @@
       <file leaf-file-name="rpi_gpio_demo2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BaiganKP/rpi_gpio_demo2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+            <state relative-caret-position="135">
+              <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
               <folding>
                 <element signature="e#19#48#0" expanded="true" />
               </folding>
@@ -29,10 +28,11 @@
       <file leaf-file-name="connectAPI.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BaiganKP/libAPI/connectAPI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+            <state relative-caret-position="75">
+              <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
               <folding>
-                <element signature="e#0#23#0" expanded="true" />
+                <element signature="e#1#16#0" expanded="true" />
+                <marker date="1530751621787" expanded="true" signature="52:54" ph="..." />
               </folding>
             </state>
           </provider>
@@ -191,8 +191,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/BaiganKP/rpi_gpio_demo2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        <state relative-caret-position="135">
+          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
           <folding>
             <element signature="e#19#48#0" expanded="true" />
           </folding>
@@ -201,10 +201,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BaiganKP/libAPI/connectAPI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+        <state relative-caret-position="75">
+          <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
           <folding>
-            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#1#16#0" expanded="true" />
+            <marker date="1530751621787" expanded="true" signature="52:54" ph="..." />
           </folding>
         </state>
       </provider>
