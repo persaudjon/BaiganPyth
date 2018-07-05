@@ -15,7 +15,8 @@ def pushToAPI():
 
 def pullFromAPI():
     #FIll in  get parameter with correct API key
-    r = requests.get()
+    r = requests.get('http://18.207.187.189:8080/v1/pass_codes/ABCDEF')
+    print r.text();
     return r;
 
 
