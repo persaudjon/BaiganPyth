@@ -3,18 +3,20 @@ import datetime
 import requests
 
 
-class apiConnect:
+class apiConnect():
 
-def pushToAPI():
-    timeNow = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    r = requests.post('http://18.207.187.189:8080/v1/pass_codes', data = {'product_id': 'testing-Box1','pass_code': '1234','created_ts': str(timeNow)})
-    return;
+    def pushToAPI():
+        
+        timeNow=datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        r=requests.post('http://18.207.187.189:8080/v1/pass_codes', data = {'product_id': 'testing-Box1','pass_code': '1234','created_ts': str(timeNow)})
+        return;
 
-def pullFromAPI():
-    #FIll in  get parameter with correct API key
-    r = requests.get('http://18.207.187.189:8080/v1/pass_codes/ABCDEF')
-    print r.text();
-    return r;
+    def pullFromAPI():
+        
+        #FIll in  get parameter with correct API key
+        r=requests.get('http://18.207.187.189:8080/v1/pass_codes/ABCDEF')
+        print r.text();
+        return r;
 
 
 

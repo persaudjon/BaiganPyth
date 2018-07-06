@@ -1,13 +1,17 @@
 #!/usr/bin/python
 
-from libAPI import connectAPI
+import connectAPI
 from pad4pi import rpi_gpio
 import time
 import sys
 
-
+pullCode = connectAPI.apiConnect()
 entered_passcode = ""
-correct_passcode = "1234"
+correct_passcode = "1267"
+#correct_passcode = pullCode.pullFromAPI()
+
+
+
 
 def cleanup():
     global keypad
@@ -15,6 +19,8 @@ def cleanup():
 
 def correct_passcode_entered():
     print("Passcode accepted. Access granted.")
+    pushCode = connectAPI.apiConnect()
+    pushCode.pushToAPI(str(correct_passcode))
     cleanup()
     sys.exit()
 
