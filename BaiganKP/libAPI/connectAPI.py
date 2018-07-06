@@ -7,7 +7,7 @@ class apiConnect:
 
 def pushToAPI():
     timeNow = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    r = requests.post('http://18.207.187.189:8080/v1/events', data = {'event': 'Button Accepted','timestamp': str(timeNow)})
+    r = requests.post('http://18.207.187.189:8080/v1/pass_codes', data = {'product_id': 'testing-Box1','pass_code': '1234','created_ts': str(timeNow)})
     return;
 
 def pullFromAPI():
